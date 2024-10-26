@@ -1,12 +1,12 @@
 import React from 'react';
 import './Map.css';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import { Icon } from 'leaflet'; // Make sure to import Icon
-import redIcon from './red.png'; // Adjust the path according to your project structure
+import { Icon } from 'leaflet';
+import redIcon from './red.png'; 
 
 const customIcon = new Icon({
   iconUrl: redIcon,
-  iconSize: [38, 38], // Size of the icon
+  iconSize: [38, 38], 
 });
 
 function Map() {

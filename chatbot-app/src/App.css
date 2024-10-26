@@ -22,11 +22,14 @@ html{
 
 .navbar{
   background-color: #E3C3D8;
+  position: relative;
 
 }
 ul{
   list-style: none;
   display: flex;
+  margin-left: 55px;
+  margin-right: 10px;
 
 }
 
@@ -39,22 +42,41 @@ ul li{
   justify-content: right;
 }
 
+#heading{
+  font-family: "Open Sans", serif;
+  font-size: 2rem;
+  color: #5C2649;
+  margin: 20px;
+  margin-left: 60px;
+}
+
+#subheading{
+  font-family: "Open Sans", serif;
+  font-size: 1.5rem;
+  color: #5C2649;
+  margin: 20px;
+  margin-left: 60px;
+}
+
 /*sizing of map */
 .leaflet-container{
-  margin-top:2rem;
   height: 70vh;
-  width: 50vh;
-  display: flex;
-  justify-content: flex-end;
-  margin-left: 40rem;
+  width: 100%;
+  position: relative;
 }
+
+
 #but1{
   display: flex;
-  margin-left: 40rem;
   border-radius: 20px;
   font-family: "Open Sans", serif;
-  margin-top:5px;
+  margin-top:100px;
   padding: 20px;
+  position: absolute;
+  bottom: 20px;
+  left: 25%;
+  transform: translateX(-50%);
+  z-index: 1000;
 }
 
 
@@ -77,6 +99,26 @@ ul li{
   margin-top: 10rem;
 }
 
+.content-container{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.chatbot-container, .map-container {
+  flex: 1; /* Allows both containers to take equal width */
+  max-width: 50%; /* Ensures they don’t exceed half the width */
+}
+
+.map-container, .chatbot-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+}
+
 .card h3{
   position: absolute;
   left: 85px;
@@ -86,4 +128,18 @@ ul li{
 
 .card h3:hover{
   background-color: aliceblue;
+}
+
+.volunteers-link {
+  position: absolute;
+  right: 10px;
+}
+
+.volunteers-link a{
+  color: rgb(115, 63, 199);
+  text-decoration: none;
+}
+
+.volunteers-link:hover {
+  color: rgb(92, 38, 73)
 }
