@@ -1,5 +1,13 @@
+<<<<<<< HEAD
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './Home';
+import Map from './Map'; 
+import Bot from './Bot'; 
+=======
 import React, { useState } from "react";
 import axios from "axios";
+>>>>>>> 38f3997110f868306f5d8da4d6ffcc4d5e2283a6
 import './App.css';
 
 function App() {
@@ -14,6 +22,16 @@ function App() {
     setResponse(response.data);
   };
   return (
+<<<<<<< HEAD
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/map" element={<Map />} />
+        <Route path="/bot" element={<Bot />} />
+
+      </Routes>
+    </Router>
+=======
     <div className="App">
             <div>
         <input
@@ -29,6 +47,7 @@ function App() {
         <p>Chatbot: {response}</p>
       </div>
     </div>
+>>>>>>> 38f3997110f868306f5d8da4d6ffcc4d5e2283a6
   );
 }
 

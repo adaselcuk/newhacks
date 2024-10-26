@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: linear-gradient(#F4E4FF, #AD90C0);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root{
+  --purple1: #E3C3D8;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.navbar{
+  background-color: #E3C3D8;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+ul{
+  list-style: none;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
 }
 
-.App-link {
-  color: #61dafb;
+ul li{
+  padding: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#right{
+  display: flex;
+  justify-content: right;
+}
+
+/*sizing of map */
+.leaflet-container{
+  margin-top:2rem;
+  height: 70vh;
+  width: 50vh;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 40rem;
+}
+#but1{
+  display: flex;
+  margin-left: 40rem;
+  border-radius: 20px;
+  font-family: "Open Sans", serif;
+  margin-top:5px;
+  padding: 20px;
+}
+
+
+.card{
+  width: 300px;
+  height: 200px;
+  background-color: rgb(244, 109, 206);
+  font-family: "Open Sans", serif;
+  color: rgb(209, 176, 249);
+  border-radius: 20px;
+  position: relative;
+}
+
+.cards-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-left: 8rem;
+  margin-bottom: 12rem;
+  margin-top: 10rem;
+}
+
+.card h3{
+  position: absolute;
+  left: 85px;
+  top: 150px;
+  border-radius: 30px;
+}
+
+.card h3:hover{
+  background-color: aliceblue;
 }
