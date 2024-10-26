@@ -1,0 +1,56 @@
+/* bot.css */
+
+/* Style the DeepChat container */
+.deep-chat-container {
+	border-radius: 10px;
+	max-width: 600px;
+	margin: 0 auto;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Customize message styles */
+  .deep-chat-container .message {
+	font-size: 1rem;
+	line-height: 1.5;
+	color: #333;
+  }
+  
+  .deep-chat-container .user-message {
+	background-color: #f0f4f8;
+	color: #333;
+	border-radius: 8px;
+	padding: 10px;
+	margin: 5px;
+  }
+  
+  .deep-chat-container .bot-message {
+	background-color: #007bff;
+	color: white;
+	border-radius: 8px;
+	padding: 10px;
+	margin: 5px;
+	align-self: flex-start;
+  }
+  
+  /* Input field and button styles */
+  .deep-chat-container .input-field {
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	padding: 8px;
+	width: calc(100% - 20px);
+	margin: 10px;
+  }
+  
+  .deep-chat-container .send-button {
+	background-color: #007bff;
+	color: white;
+	border: none;
+	padding: 8px 12px;
+	cursor: pointer;
+	border-radius: 4px;
+  }
+  
+  .deep-chat-container .send-button:hover {
+	background-color: #0056b3;
+  }
+  
