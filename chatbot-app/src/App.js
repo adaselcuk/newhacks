@@ -1,13 +1,9 @@
-<<<<<<< HEAD
-import React from 'react';
+import {React, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import axios from 'axios';
 import Home from './Home';
 import Map from './Map'; 
-import Bot from './Bot'; 
-=======
-import React, { useState } from "react";
-import axios from "axios";
->>>>>>> 38f3997110f868306f5d8da4d6ffcc4d5e2283a6
+import Todo from './Todo';
 import './App.css';
 
 function App() {
@@ -22,32 +18,14 @@ function App() {
     setResponse(response.data);
   };
   return (
-<<<<<<< HEAD
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/map" element={<Map />} />
-        <Route path="/bot" element={<Bot />} />
+        <Route path="/todo" element={<Todo />} />
 
       </Routes>
     </Router>
-=======
-    <div className="App">
-            <div>
-        <input
-          type="text"
-          value={value}
-          onChange={onChange}
-        ></input>
-      </div>
-      <div>
-        <button onClick={handleSubmit}>Click me for answers!</button>
-      </div>
-      <div>
-        <p>Chatbot: {response}</p>
-      </div>
-    </div>
->>>>>>> 38f3997110f868306f5d8da4d6ffcc4d5e2283a6
   );
 }
 
