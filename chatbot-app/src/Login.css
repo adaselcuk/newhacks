@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+}
+
+#form {
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 15px;
+    width: 320px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(128, 0, 128, 0.2);
+}
+
+#form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #5a0a8b; 
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #d3a3f7; 
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    color: #5a0a8b;
+    background-color: #f9f6fc;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #a96ddb; 
+    box-shadow: 0 0 8px rgba(128, 0, 128, 0.2);
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #7a1b9c; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #5a0a8b; 
+}
+
+.center-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.error-message {
+    color: #d11a2a; 
+    font-size: 14px;
+    margin-top: 10px;
+}
