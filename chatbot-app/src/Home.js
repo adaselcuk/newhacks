@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { MapContainer, TileLayer } from 'react-leaflet';
 import "leaflet/dist/leaflet.css";
 import './App.css';
-import Bot from './Bot';
+import GemBot from './Gembot';
 
 function Home() {
   return (
@@ -19,7 +19,7 @@ function Home() {
       <div id="subheading">Get information about how to prepare for natural disasters and safe evacuation zones before they hit</div>
       <div className="content-container">
       <div className="chatbot-container">
-        <Bot />
+        <GemBot />
       </div>
       <div className="map-container">
         <MapContainer center={[43.6532, -79.3832]} zoom={13}>
