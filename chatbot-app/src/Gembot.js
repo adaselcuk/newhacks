@@ -487,7 +487,7 @@ Toll free (within the Yukon): 1-800-661-0408`;
   };
 
   return (
-    <div className="app">
+    <div className="gembot">
       <p>
         What do you want to know?
       </p>

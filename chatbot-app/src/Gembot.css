@@ -1,0 +1,62 @@
+.gembot {
+	width: 100%;
+	max-width: 600px; /* Adjust as needed */
+	margin: auto;
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	display: flex;
+	flex-direction: column;
+	height: 80vh; /* Set a fixed height */
+	overflow: hidden; /* Prevent overflow */
+  }
+  
+  .input-container {
+	display: flex;
+	margin-bottom: 10px;
+  }
+  
+  .input-container input {
+	flex: 1;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px 0 0 5px;
+	outline: none;
+  }
+  
+  .input-container button {
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-left: none;
+	border-radius: 0 5px 5px 0;
+	background-color: #623b5d;
+	color: #fff;
+	cursor: pointer;
+  }
+  
+  .input-container button:hover {
+	background-color: #220546;
+  }
+  
+  .error {
+	color: red;
+	margin-bottom: 10px;
+  }
+  
+  .search-result {
+	flex: 1; /* Allow the search result to take up remaining space */
+	overflow-y: auto; /* Enable vertical scrolling */
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background-color: #f9f9f9;
+  }
+  
+  .answer {
+	margin-bottom: 10px;
+	padding: 10px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+  }
