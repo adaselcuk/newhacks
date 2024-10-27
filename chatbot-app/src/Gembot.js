@@ -825,7 +825,7 @@ const getDisasterGuide = (question) => {
           "Content-Type": "application/json",
         },
       };
-      const response = await fetch("http://localhost:8000/gemini", options);
+      const response = await fetch(`${process.env.REACT_APP_SERVER_URL}/gemini`, {options});
       const data = await response.text();
 
       setChatHistory((oldChatHistory) => [
