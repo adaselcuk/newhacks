@@ -23,7 +23,7 @@ app.post("/gemini", async (req, res) => {
   const result = await chat.sendMessage(msg);
   const response = await result.response;
   const text = response.text();
-  res.send(text);
+  res.json(text);
 });
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
