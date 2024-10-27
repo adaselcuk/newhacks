@@ -6,6 +6,7 @@ import Map from './Map';
 import Todo from './Todo';
 import Bot from './Bot';
 import Community from './Community';
+import GemBot from './Gembot';
 import './App.css';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path="/todo" element={<Todo />} />
         <Route path="/bot" element={<Bot/>} />
         <Route path="/community" element={<Community />} />
+        <Route path="/gembot" element={<GemBot />} />
 
       </Routes>
     </Router>
