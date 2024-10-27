@@ -11,7 +11,6 @@ function Home() {
       <div className="navbar">
         <ul>
           <li>Logo</li>
-          <li id="right">Contact Us</li>
           <li id="right-corner" className="volunteers-link">
             <Link to="/todo">Volunteers Click Here</Link></li>
         </ul>
@@ -38,7 +37,9 @@ function Home() {
 
       </div>
       <div className="cards-container">
-        <Card title="Community" />
+        <Link to="/community">
+        <Card title="Ask for help from or give back to the community here" />
+        </Link>
       </div>
     </div>
   );

@@ -5,6 +5,7 @@ import Home from './Home';
 import Map from './Map'; 
 import Todo from './Todo';
 import Bot from './Bot';
+import Community from './Community';
 import './App.css';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route path="/map" element={<Map />} />
         <Route path="/todo" element={<Todo />} />
         <Route path="/bot" element={<Bot/>} />
+        <Route path="/community" element={<Community />} />
 
       </Routes>
     </Router>
