@@ -505,7 +505,20 @@ Toll free (within the Yukon): 1-800-661-0408`;
         {chatHistory.map((chatItem, _index) => (
           <div key={_index}>
             <p className="answer">
-              {chatItem.role} : {chatItem.parts.map(part => part.text).join(" ")}
+			<strong>{chatItem.role}:</strong>{" "}
+              <span
+                dangerouslySetInnerHTML={{
+                  __html: chatItem.parts
+                    .map((part) =>
+                      part.text
+                        .replace(/\*\*(.*?)\*\*/g, "<b>$1</b>") // Bold
+                        .replace(/\*(.*?)\*/g, "<i>$1</i>") // Italics
+                        .replace(/\n/g, "<br/>") // New lines
+                        .replace(/•/g, "<li>") // List items
+                    )
+                    .join(" "), // Join all parts together
+                }}
+              />
             </p>
           </div>
         ))}

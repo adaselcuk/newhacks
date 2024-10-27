@@ -62,7 +62,9 @@ ul li{
 .leaflet-container{
   height: 70vh;
   width: 100%;
+  max-width: 800px;
   position: relative;
+  overflow: hidden;
 }
 
 
@@ -110,11 +112,13 @@ ul li{
   gap: 20px;
   justify-content: center;
   margin: 20px 0;
+  overflow: hidden;
 }
 
 .chatbot-container, .map-container {
   flex: 1; 
   max-width: 50%; 
+  overflow: hidden;
 }
 
 .map-container, .chatbot-container {
